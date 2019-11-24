@@ -1,0 +1,268 @@
+{
+  "pages": [ //pages数组中第一项表示应用启动页,
+    {
+      "path": "pages/main/main",
+      "style": {
+        "navigationBarTitleText": "Trang chủ"
+      }
+    },
+    {
+      "path": "pages/business/repayment/repayment",
+      "style": {
+        "navigationBarTitleText": "Thanh toán"
+      }
+    },
+    {
+      "path": "pages/user/user",
+      "style": {
+        "navigationBarTitleText": "Tôi"
+      }
+    },
+    {
+      "path": "pages/main/auto",
+      "style": {
+        "navigationBarTitleText": "Tải"
+      }
+    },
+    {
+      "path": "pages/account/account",
+      "style": {
+        "navigationBarTitleText": "Tài khoản"
+      }
+    },
+    {
+      "path": "pages/account/login/login",
+      "style": {
+        "navigationBarTitleText": "Đăng nhập"
+      }
+    },
+    {
+      "path": "pages/account/reg/reg",
+      "style": {
+        "navigationBarTitleText": "Tạo tài khoản"
+      }
+    },
+    {
+      "path": "pages/account/reg/agreement",
+      "style": {
+        "navigationBarTitleText": "Thỏa thuận tạo tài khoản"
+      }
+    },
+    {
+      "path": "pages/account/find/find",
+      "style": {
+        "navigationBarTitleText": "Tìm lại mật khẩu"
+      }
+    },
+    {
+      "path": "pages/account/find/pwd",
+      "style": {
+        "navigationBarTitleText": "Thay đổi mật khẩu"
+      }
+    },
+    {
+      "path": "pages/user/setting/setting",
+      "style": {
+        "navigationBarTitleText": "Cài đặt"
+      }
+    },
+    {
+      "path": "pages/user/setting/loginpwd/loginpwd",
+      "style": {
+        "navigationBarTitleText": "Mật khẩu đăng nhập"
+      }
+    },
+    {
+      "path": "pages/user/setting/tradepwd/tradepwd",
+      "style": {
+        "navigationBarTitleText": "Mật khẩu giao dịch"
+      }
+    },
+    {
+      "path": "pages/user/profile/profile",
+      "style": {
+        "navigationBarTitleText": "Thông tin cá nhân"
+      }
+    },
+    {
+      "path": "pages/user/profile/realname/realname",
+      "style": {
+        "navigationBarTitleText": "Xác thực thông tin"
+      }
+    },
+    {
+      "path": "pages/user/profile/realname/face",
+      "style": {
+        "navigationBarTitleText": "Nhận dạng khuôn mặt"
+      }
+    },
+    {
+      "path": "pages/user/profile/member/member",
+      "style": {
+        "navigationBarTitleText": "Thông tin cá nhân"
+      }
+    },
+    {
+      "path": "pages/user/profile/work/work",
+      "style": {
+        "navigationBarTitleText": "Thông tin công việc"
+      }
+    },
+    {
+      "path": "pages/user/profile/bank/bank",
+      "style": {
+        "navigationBarTitleText": "Thông tin thẻ ngân hàng"
+      }
+    },
+    {
+      "path": "pages/user/profile/bank/edit",
+      "style": {
+        "navigationBarTitleText": "Xác thực thẻ ngân hàng"
+      }
+    },
+    {
+      "path": "pages/user/profile/mobile/mobile",
+      "style": {
+        "navigationBarTitleText": "Xác thực nhà mạng"
+      }
+    },
+    {
+      "path": "pages/user/profile/fackbook/fackbook",
+      "style": {
+        "navigationBarTitleText": "Xác thực Facebook"
+      }
+    },
+    {
+      "path": "pages/user/invite/invite",
+      "style": {
+        "navigationBarTitleText": "Mời bạn"
+      }
+    },
+    {
+      "path": "pages/user/invite/invitefriend",
+      "style": {
+        "navigationBarTitleText": "Mời bạn"
+      }
+    },
+    {
+      "path": "pages/business/borrow/agreement",
+      "style": {
+        "navigationBarTitleText": "Thỏa thuận vay tiền"
+      }
+    },
+    {
+      "path": "pages/business/borrow/apply",
+      "style": {
+        "navigationBarTitleText": "Xin vay"
+      }
+    },
+    {
+      "path": "pages/business/borrow/detail",
+      "style": {
+        "navigationBarTitleText": "Chi tiết khoản vay"
+      }
+    },
+    {
+      "path": "pages/business/borrow/borrows",
+      "style": {
+        "navigationBarTitleText": "Lịch sử vay"
+      }
+    },
+    {
+      "path": "pages/business/repayment/category/payment",
+      "style": {
+        "navigationBarTitleText": "Thanh toán bình thường"
+      }
+    },
+    {
+      "path": "pages/business/repayment/category/deferred",
+      "style": {
+        "navigationBarTitleText": "Thanh toán chậm"
+      }
+    },
+    {
+      "path": "pages/business/repayment/method/transfer",
+      "style": {
+        "navigationBarTitleText": "Thanh toán qua chuyển khoản"
+      }
+    },
+    {
+      "path": "pages/business/repayment/method/online",
+      "style": {
+        "navigationBarTitleText": "Tự thanh toán"
+      }
+    },
+    {
+      "path": "pages/business/repayment/method/third",
+      "style": {
+        "navigationBarTitleText": "Tự thanh toán"
+      }
+    },
+    {
+      "path": "pages/business/repayment/method/zalo",
+      "style": {
+        "navigationBarTitleText": "Thanh toán qua ZALO"
+      }
+    },
+    {
+      "path": "pages/business/repayment/method/epay",
+      "style": {
+        "navigationBarTitleText": "Thanh toán qua Epay"
+      }
+    },
+    {
+      "path": "pages/business/repayment/method/epaydes",
+      "style": {
+        "navigationBarTitleText": "Hướng dẫn thanh toán"
+      }
+    },
+    {
+      "path": "pages/content/feedback/feedback",
+      "style": {
+        "navigationBarTitleText": "Ý kiến phản hồi"
+      }
+    },
+    {
+      "path": "pages/content/help/help",
+      "style": {
+        "navigationBarTitleText": "Trung tâm trợ giúp"
+      }
+    },
+    {
+      "path": "pages/loading/loading",
+      "style": {
+        "navigationBarTitleText": "Đang tải..."
+      }
+    }
+  ],
+  "tabBar": {
+    "color": "#7a7e83",
+    "selectedColor": "#0faeff",
+    "backgroundColor": "#ffffff",
+    "list": [
+      {
+        "pagePath": "pages/main/main",
+        "text": "Xin Vay",
+        "iconPath": "static/img/home.png",
+        "selectedIconPath": "static/img/home_active.png"
+      },
+      {
+        "pagePath": "pages/business/repayment/repayment",
+        "text": "Thanh toán",
+        "iconPath": "static/img/user.png",
+        "selectedIconPath": "static/img/user_active.png"
+      },
+      {
+        "pagePath": "pages/user/user",
+        "text": "Tôi",
+        "iconPath": "static/img/user.png",
+        "selectedIconPath": "static/img/user_active.png"
+      }
+    ]
+  },
+  "globalStyle": {
+    "navigationBarTextStyle": "white",
+    "navigationBarBackgroundColor": "#0faeff",
+    "backgroundColor": "#fbf9fe"
+  }
+}

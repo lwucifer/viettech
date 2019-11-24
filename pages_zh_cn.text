@@ -1,0 +1,238 @@
+{
+  "pages": [ //pages数组中第一项表示应用启动页,
+    {
+      "path": "pages/main/main",
+      "style": {
+        "navigationBarTitleText": "首页"
+      }
+    },
+    {
+      "path": "pages/business/repayment/repayment",
+      "style": {
+        "navigationBarTitleText": "还款"
+      }
+    },
+    {
+      "path": "pages/user/user",
+      "style": {
+        "navigationBarTitleText": "我的"
+      }
+    },
+    {
+      "path": "pages/main/auto",
+      "style": {
+        "navigationBarTitleText": "加载"
+      }
+    },
+    {
+      "path": "pages/account/account",
+      "style": {
+        "navigationBarTitleText": "账号"
+      }
+    },
+    {
+      "path": "pages/account/login/login",
+      "style": {
+        "navigationBarTitleText": "登录"
+      }
+    },
+    {
+      "path": "pages/account/reg/reg",
+      "style": {
+        "navigationBarTitleText": "注册"
+      }
+    },
+    {
+      "path": "pages/account/reg/agreement",
+      "style": {
+        "navigationBarTitleText": "注册协议"
+      }
+    },
+    {
+      "path": "pages/account/find/find",
+      "style": {
+        "navigationBarTitleText": "找回密码"
+      }
+    },
+    {
+      "path": "pages/account/find/pwd",
+      "style": {
+        "navigationBarTitleText": "修改密码"
+      }
+    },
+    {
+      "path": "pages/user/setting/setting",
+      "style": {
+        "navigationBarTitleText": "设置"
+      }
+    },
+    {
+      "path": "pages/user/setting/loginpwd/loginpwd",
+      "style": {
+        "navigationBarTitleText": "登录密码"
+      }
+    },
+    {
+      "path": "pages/user/setting/tradepwd/tradepwd",
+      "style": {
+        "navigationBarTitleText": "交易密码"
+      }
+    },
+    {
+      "path": "pages/user/profile/profile",
+      "style": {
+        "navigationBarTitleText": "个人资料"
+      }
+    },
+    {
+      "path": "pages/user/profile/realname/realname",
+      "style": {
+        "navigationBarTitleText": "实名认证"
+      }
+    },
+    {
+      "path": "pages/user/profile/realname/face",
+      "style": {
+        "navigationBarTitleText": "人脸识别"
+      }
+    },
+    {
+      "path": "pages/user/profile/member/member",
+      "style": {
+        "navigationBarTitleText": "个人信息"
+      }
+    },
+    {
+      "path": "pages/user/profile/work/work",
+      "style": {
+        "navigationBarTitleText": "工作信息"
+      }
+    },
+    {
+      "path": "pages/user/profile/bank/bank",
+      "style": {
+        "navigationBarTitleText": "银行卡信息"
+      }
+    },
+    {
+      "path": "pages/user/profile/bank/edit",
+      "style": {
+        "navigationBarTitleText": "银行卡认证"
+      }
+    },
+    {
+      "path": "pages/user/profile/mobile/mobile",
+      "style": {
+        "navigationBarTitleText": "运营商认证"
+      }
+    },
+    {
+      "path": "pages/user/profile/fackbook/fackbook",
+      "style": {
+        "navigationBarTitleText": "FB认证"
+      }
+    },
+    {
+      "path": "pages/user/invite/invite",
+      "style": {
+        "navigationBarTitleText": "邀请"
+      }
+    },
+    {
+      "path": "pages/business/borrow/agreement",
+      "style": {
+        "navigationBarTitleText": "借款协议"
+      }
+    },
+    {
+      "path": "pages/business/borrow/apply",
+      "style": {
+        "navigationBarTitleText": "借款申请"
+      }
+    },
+    {
+      "path": "pages/business/borrow/detail",
+      "style": {
+        "navigationBarTitleText": "借款详细"
+      }
+    },
+    {
+      "path": "pages/business/borrow/borrows",
+      "style": {
+        "navigationBarTitleText": "借款记录"
+      }
+    },
+    {
+      "path": "pages/business/repayment/category/payment",
+      "style": {
+        "navigationBarTitleText": "正常还款"
+      }
+    },
+    {
+      "path": "pages/business/repayment/category/deferred",
+      "style": {
+        "navigationBarTitleText": "延期还款"
+      }
+    },
+    {
+      "path": "pages/business/repayment/method/transfer",
+      "style": {
+        "navigationBarTitleText": "银行转账"
+      }
+    },
+    {
+      "path": "pages/business/repayment/method/online",
+      "style": {
+        "navigationBarTitleText": "自助还款"
+      }
+    },
+    {
+      "path": "pages/business/repayment/method/zalo",
+      "style": {
+        "navigationBarTitleText": "ZALO还款"
+      }
+    },
+    {
+      "path": "pages/content/feedback/feedback",
+      "style": {
+        "navigationBarTitleText": "留言反馈"
+      }
+    },
+    {
+      "path": "pages/content/help/help",
+      "style": {
+        "navigationBarTitleText": "帮助中心"
+      }
+    }
+  ],
+  "tabBar": {
+    "color": "#7a7e83",
+    "selectedColor": "#0faeff",
+    "backgroundColor": "#ffffff",
+    "list": [
+      {
+        "pagePath": "pages/main/main",
+        "text": "借款",
+        "iconPath": "static/img/home.png",
+        "selectedIconPath": "static/img/home_active.png"
+      },
+      {
+        "pagePath": "pages/business/repayment/repayment",
+        "text": "还款",
+        "iconPath": "static/img/user.png",
+        "selectedIconPath": "static/img/user_active.png"
+      },
+      {
+        "pagePath": "pages/user/user",
+        "text": "我的",
+        "iconPath": "static/img/user.png",
+        "selectedIconPath": "static/img/user_active.png"
+      }
+    ]
+  },
+  "globalStyle": {
+    "navigationBarTextStyle": "white",
+    "navigationBarBackgroundColor": "#0faeff",
+    "backgroundColor": "#fbf9fe"
+  }
+}
