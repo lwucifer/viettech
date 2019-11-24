@@ -8,8 +8,9 @@
             </view>
             <view class="input-row input-flex border">
                 <label class="title">{{$t('bus.jieKuanShiChang')}}</label>
-                <span v-if="!time15" class="btn-select active">8 {{$t('bus.timesu')}}</span>
-                <span v-if="!time15" class="btn-select">15 {{$t('bus.timesu')}}</span>
+                <span v-if="!time15" class="btn-select active" >8 {{$t('bus.timesu')}}</span>
+                <span v-if="!time15" class="btn-select" >15 {{$t('bus.timesu')}}</span>
+
                 <button v-if="time15" class="btn-select" :class="timeLimit == '8' ? 'active' : ''" @click="onTimeSet('8')">8 {{$t('bus.timesu')}}</button>
                 <button v-if="time15" class="btn-select" :class="timeLimit == '15' ? 'active' : ''" @click="onTimeSet('15')">15 {{$t('bus.timesu')}}</button>
             </view>
@@ -88,6 +89,7 @@
     export default {
         data() {
             return {
+                minAmount: 500000,
                 query: { amount: "0" },
                 amount: "0",
                 timeLimit: "8",
@@ -111,7 +113,7 @@
             ...mapMutations(["pageAuth"]),
             onInit() {
                 var that = this;
-                that.amount = util.toMoney(that.borrow);
+                that.amount = util.toMoney(that.borrow)+'';
                 that.amountCost();
                 userService.getBanks({ userId: that.userId }, function (obj, msg, code) {
                     that.bankName = obj["bank"];
@@ -120,7 +122,7 @@
             },
             onSubmit() {
                 var that = this;
-
+                let status = true;
                 var input = {
                     userId: that.userId,
                     amount: that.amountGet(),
@@ -130,12 +132,19 @@
                 busService.borrowApply(input, function (obj, msg, code) {
                     util.success(msg || (that.$t('common.apply')), {
                         over() {
+                            status = false;
                             uni.navigateTo({
                                 url: 'borrows'
                             });
                         }
-                    });
+                    })
                 })
+                if (status){
+                    // uni.switchTab({
+                    //     url: "/user/profile/profile"
+                    // });
+                }
+
             },
             onAgreement() {
                 var that = this;
@@ -151,11 +160,18 @@
                     if (cur - that.lastInput >= 490) {
                         that.amountCost();
                     }
-                }, 500)
+                }, 1000)
             },
             amountCost(callback) {
                 var that = this;
-                that.amount = that.amountGet() > that.borrow ? util.toMoney(that.borrow) : util.toMoney(that.amount);
+                if (parseInt(that.amountGet()) > that.borrow) {
+                    that.amount = util.toMoney(that.borrow);
+                } else if (parseInt(that.amountGet()) < that.minAmount) {
+                    that.amount = util.toMoney(that.minAmount);
+                } else {
+                    that.amount = util.toMoney(that.amount);
+                }
+
                 if (util.isEmpty(that.amountGet()) || util.isEmpty(that.timeLimit)) {
                     that.repAmount = '0';
                     that.interestfee ='0';
@@ -181,7 +197,9 @@
                 var that = this;
                 if (that.timeLimit != e) {
                     that.timeLimit = e;
-                    that.onAmountCostChange();
+                    setTimeout(() => {
+                        that.amountCost();
+                    }, 500)
                 }
             },
         },
@@ -190,7 +208,6 @@
             option = option || { amount: 0 };
             that.query = option;
             userService.getProductTime({ userId: that.userId }, function (obj, msg, code) {
-                that.timeLimit = obj['productTime'];
                 if (obj['productTime'] == '15') {
                     that.time15 = true;
                 }
@@ -221,5 +238,6 @@
         background: transparent;
         margin: 0 30px 0 0;
         padding: 0 15px;
+        display: inline-block;
     }
 </style>
